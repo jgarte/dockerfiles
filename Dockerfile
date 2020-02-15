@@ -23,7 +23,15 @@ run pip3 install \
         gpy \
         gpyopt
 run pip3 install ipython[all]
+run apt-get install -y git
+run git clone https://github.com/saffsd/langid.py /src/langid.py
+run git clone  https://github.com/myleott/ark-twokenize-py /src/ark-twokenize-py
+run pip3 install geopy
+run pip3 install unidecode
+
 run useradd -m ipython
 expose 8888
 user ipython
+workdir /src/meetup
+
 cmd ["ipython", "notebook", "--ip", "0.0.0.0", "--no-browser"]
