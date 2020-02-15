@@ -29,9 +29,16 @@ run git clone  https://github.com/myleott/ark-twokenize-py /src/ark-twokenize-py
 run pip3 install geopy
 run pip3 install unidecode
 
+workdir /src/meetup
 run useradd -m ipython
 expose 8888
+run chown ipython .
+
+run cp -r /src/langid.py /src/meetup/langid.py
+run cp /src/ark-twokenize-py/twokenize.py /src/meetup/twokenize.py
+
+volume /src/meetup/data
+
 user ipython
-workdir /src/meetup
 
 cmd ["ipython", "notebook", "--ip", "0.0.0.0", "--no-browser"]
