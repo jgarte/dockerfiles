@@ -25,17 +25,16 @@ run pip3 install \
 run pip3 install ipython[all]
 run apt-get install -y git
 run git clone https://github.com/saffsd/langid.py /src/langid.py
+run pip3 install /src/langid.py
 run git clone  https://github.com/myleott/ark-twokenize-py /src/ark-twokenize-py
 run pip3 install geopy
 run pip3 install unidecode
 
 workdir /src/meetup
+run cp /src/ark-twokenize-py/twokenize.py /src/meetup/twokenize.py
 run useradd -m ipython
 expose 8888
 run chown ipython .
-
-run cp -r /src/langid.py /src/meetup/langid.py
-run cp /src/ark-twokenize-py/twokenize.py /src/meetup/twokenize.py
 
 volume /src/meetup/data
 
