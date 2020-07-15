@@ -1,0 +1,46 @@
+#+title: ai-meetup
+* <2019-10-26 Sat> Pattern Recognition and Machine Learning - Bishop
+** I read until 1.2.5, Vivek read something else
+** Find an arbitrary function
+*** 
+
+* <2019-11-02 Sat> Pattern Recognition and Machine Learning - Bishop
+\begin{equation}
+x = \sqrt{b}
+\end{equation}
+
+* Bloggable content ideas
+** Clustering of images (Unsupervised)
+** Approximate wc utility for gigantic files
+** Changes in word meanings over time (word vector)
+   Note to self - search google scholar for this
+** Economics? Trade?
+** Game AI
+** Autocomplete
+** Computer vision to find areas/trees vulnerable to wildfire [[https://www.ijcai.org/proceedings/2019/0636.pdf][Found this]]
+** Earthquake event extraction
+** Intelligent search on homelessness issues
+** Perfect hairstyle
+** Best city to live in
+** Happiness function estimation <- Chosen as project
+* Happiness function
+** Twitter streaming
+*** Hashtags? #happy giddy glad happy sad, #sad frustrated depressed mad
+*** Keywords, locations
+*** Word vector to apporximate happiness
+** Literature Review
+*** LSTM GRU BiLSTM
+** OpenStreet Map
+*** Population density
+*** Public transportation
+*** Walkablility
+*** Pollution
+*** Crime rate
+*** Availability of services
+** Tasks
+*** Twitter streaming service and storing to a database
+*** Literature review
+*** word2vec for happiness (gensim in pypi), G lo VE vectors
+*** city data
+**** Openstreet Map
+**** Wikipedia
